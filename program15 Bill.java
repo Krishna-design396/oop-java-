@@ -1,42 +1,38 @@
 import java.util.*;
-
 interface Billing {
-    void addProduct(int productId, String name, int quantity, double unitPrice);
-    void generateBill(int orderNumber);
+void addProduct(int productId, String name, int quantity, double unitPrice);
+void generateBill(int orderNumber);
 }
-
 class Product {
-    int productId;
-    String name;
-    int quantity;
-    double unitPrice;
-
-    Product(int productId, String name, int quantity, double unitPrice) {
-        this.productId = productId;
-        this.name = name;
-        this.quantity = quantity;
-        this.unitPrice = unitPrice;
-    }
-
-    double getTotal() {
-        return quantity * unitPrice;
-    }
+int productId;
+String name;
+int quantity;
+double unitPrice;
+Product(int productId, String name, int quantity, double unitPrice) {
+this.productId = productId;
+this.name = name;
+this.quantity = quantity;
+this.unitPrice = unitPrice;
 }
-
+double getTotal() {
+return quantity * unitPrice;
+}
+}
 class BillGenerator implements Billing {
-    List<Product> products = new ArrayList<>();
-
-    public void addProduct(int productId, String name, int quantity, double unitPrice) {
-        products.add(new Product(productId, name, quantity, unitPrice));
+List<Product> products = new ArrayList<>();
+public void addProduct(int productId, String name, int quantity, double unitPrice) {
+products.add(new Product(productId, name, quantity, unitPrice));
     }
 
     public void generateBill(int orderNumber) {
         double netAmount = 0;
 
-        System.out.println("\n========= BILL (Order " + orderNumber + ") =========");
+        System.out.println("\n===================== BILL (Order " + orderNumber + ") ====================");
+        System.out.println("\n");
+           System.out.println("----------------------------------------------------------");
         System.out.printf("%-10s %-15s %-10s %-12s %-10s\n",
                 "ID", "Name", "Qty", "Unit Price", "Total");
-
+                System.out.println("----------------------------------------------------------");
         for (Product p : products) {
             double total = p.getTotal();
             netAmount += total;
@@ -45,12 +41,12 @@ class BillGenerator implements Billing {
                     p.productId, p.name, p.quantity, p.unitPrice, total);
         }
 
-        System.out.println("---------------------------------------------------");
+        System.out.println("----------------------------------------------------------");
         System.out.printf("Net Amount: %.2f\n", netAmount);
     }
 }
 
-public class Main {
+public class Bill {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -91,6 +87,7 @@ public class Main {
             int orderNumber = 1;
             for (BillGenerator bill : allOrders) {
                 bill.generateBill(orderNumber++);
+                System.exit(0);
             }
         }
     }
