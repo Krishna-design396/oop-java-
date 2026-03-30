@@ -1,0 +1,13 @@
+mca@MCA:~/Desktop/linux$ chmod +x sum.sh
+mca@MCA:~/Desktop/linux$ ./sum.sh
+ Enter two numbers: 3 4
+Sum = 7
+mca@MCA:~/Desktop/linux$ chmod +x evevodd.sh
+mca@MCA:~/Desktop/linux$ ./evevodd.sh
+Enter a number: 5
+5 is Odd
+mca@MCA:~/Desktop/linux$ chmod +x factorial.sh
+mca@MCA:~/Desktop/linux$ ./factorial.sh
+Enter a number: 2
+Factorial = 2
+

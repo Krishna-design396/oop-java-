@@ -1,0 +1,62 @@
+mca@MCA:~/Desktop/linux$ chmod +x rightangle.sh
+mca@MCA:~/Desktop/linux$ ./rightangle.sh
+Enter number of rows:
+3
+* 
+* * 
+* * * 
+mca@MCA:~/Desktop/linux$ chmod +x Invertedtriangle.sh
+mca@MCA:~/Desktop/linux$ ./Invertedtriangle.sh
+Enter number of rows:4
+* * * * 
+* * * 
+* * 
+* 
+mca@MCA:~/Desktop/linux$ chmod +x pyramid.sh
+mca@MCA:~/Desktop/linux$ ./pyramid.sh
+Enter number of rows:6
+     * 
+    * * 
+   * * * 
+  * * * * 
+ * * * * * 
+* * * * * * 
+mca@MCA:~/Desktop/linux$ chmod +x NumTriangle.sh
+mca@MCA:~/Desktop/linux$ ./NumTriangle.sh
+Enter number of rows:7
+1 
+1 2 
+1 2 3 
+1 2 3 4 
+1 2 3 4 5 
+1 2 3 4 5 6 
+1 2 3 4 5 6 7 
+mca@MCA:~/Desktop/linux$ chmod +x InvertedNumTri.sh
+mca@MCA:~/Desktop/linux$ ./InvertedNumTri.sh
+Enter number of rows: 8
+1 2 3 4 5 6 7 8 
+1 2 3 4 5 6 7 
+1 2 3 4 5 6 
+1 2 3 4 5 
+1 2 3 4 
+1 2 3 
+1 2 
+1 
+mca@MCA:~/Desktop/linux$ chmod +x Floyid.sh
+mca@MCA:~/Desktop/linux$ .Floyid.sh
+.Floyid.sh: command not found
+mca@MCA:~/Desktop/linux$ chmod +x Floyid.sh
+mca@MCA:~/Desktop/linux$ ./Floyid.sh
+Enter number of rows: 9
+1 
+2 3 
+4 5 6 
+7 8 9 10 
+11 12 13 14 15 
+16 17 18 19 20 21 
+22 23 24 25 26 27 28 
+29 30 31 32 33 34 35 36 
+37 38 39 40 41 42 43 44 45 
+mca@MCA:~/Desktop/linux$ 
+
+
